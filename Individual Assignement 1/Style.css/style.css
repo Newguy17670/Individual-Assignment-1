@@ -1,0 +1,164 @@
+
+/* Website colours and font */
+:root {
+    --main-color: #203864;
+    --dark-color: #172a46;
+    --background-color: #f4f4f4;
+    --text-color: #222222;
+    --white: #ffffff;
+}
+
+/* General page styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--main-color);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main heading */
+h1 {
+    margin: 0;
+}
+
+/* Navigation area */
+nav {
+    background-color: var(--dark-color);
+    padding: 10px;
+}
+
+/* Navigation list */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* Navigation list items */
+nav li {
+    display: inline-block;
+    margin: 5px;
+}
+
+/* Navigation links */
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Change link colour when mouse is over it */
+nav a:hover {
+    background-color: var(--white);
+    color: var(--dark-color);
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Sections */
+section {
+    background-color: var(--white);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Welcome section */
+.hero {
+    text-align: center;
+}
+
+/* Student identification card */
+.student-id {
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Section headings */
+section h2 {
+    color: var(--main-color);
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: var(--white);
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+
+
+/* Universal selector */
+* {
+    box-sizing: border-box;
+}
+
+/* Attribute selector */
+a[href^="mailto:"] {
+    display: inline-block;
+}
+
+/* First-child selector */
+nav li:first-child {
+    font-weight: bold;
+}
+
+
+
+
+
+/* Mobile screen styling */
+@media (max-width: 600px) {
+
+    /* Place navigation links vertically */
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Reduce main content spacing */
+    main {
+        padding: 10px;
+    }
+
+    /* Reduce section spacing */
+    section {
+        padding: 15px;
+    }
+
+    /* Make ID card smaller */
+    .student-id {
+        width: 150px;
+    }
+
+    /* Make heading smaller */
+    h1 {
+        font-size: 24px;
+    }
+}
